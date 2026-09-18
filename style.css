@@ -1,0 +1,865 @@
+/* ================================
+   EUREKA COMFORT BEDDING
+   Premium Hospitality Website
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5ef;
+    color: #17263a;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+/* NAVBAR */
+
+.navbar {
+    height: 80px;
+    background-color: #10243b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+}
+
+.logo {
+    color: #d6b56c;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.logo span {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 3.5px;
+    margin-top: 4px;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #d6b56c;
+}
+
+.quote-btn {
+    background-color: #d6b56c;
+    color: #10243b !important;
+    padding: 12px 20px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 650px;
+    background:
+        linear-gradient(
+            rgba(16, 36, 59, 0.55),
+            rgba(16, 36, 59, 0.55)
+        ),
+        url("https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1800&q=80");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+}
+
+.hero-content {
+    max-width: 700px;
+    color: white;
+}
+
+.hero-small {
+    color: #d6b56c;
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 68px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 580px;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primary {
+    background-color: #d6b56c;
+    color: #10243b;
+    padding: 15px 28px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-secondary {
+    border: 1px solid white;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+}
+
+/* INTRODUCTION */
+
+.intro {
+    text-align: center;
+    padding: 100px 10%;
+}
+
+.section-label {
+    color: #b08b45;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.intro h2 {
+    font-size: 42px;
+    margin: 15px 0 20px;
+}
+
+.intro p {
+    max-width: 750px;
+    margin: auto;
+    color: #666;
+    font-size: 17px;
+}
+
+/* PRODUCTS */
+
+.products {
+    background-color: #ffffff;
+    padding: 90px 7%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    margin-top: 12px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: #ffffff;
+    padding: 40px 35px;
+    min-height: 190px;
+    border: 1px solid #e6dfd2;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.product-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 0;
+    background: #d6b56c;
+    transition: height 0.4s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(16, 36, 59, 0.12);
+    border-color: #d6b56c;
+}
+
+.product-card:hover::before {
+    height: 100%;
+}
+
+.product-card h3 {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: 500;
+    color: #17263a;
+    margin-bottom: 14px;
+}
+
+.product-card p {
+    color: #6d6d6d;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* WHY EUREKA */
+
+.why {
+    padding: 100px 7%;
+    background-color: #10243b;
+    color: white;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    margin-top: 55px;
+}
+
+.why-item {
+    border-top: 1px solid #d6b56c;
+    padding-top: 25px;
+}
+
+.why-item h3 {
+    color: #d6b56c;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.why-item p {
+    color: #d8d8d8;
+    font-size: 14px;
+}
+
+/* CTA */
+
+.cta {
+    text-align: center;
+    padding: 100px 10%;
+    background-color: #e9e1d2;
+}
+
+.cta h2 {
+    font-size: 45px;
+    margin: 15px 0 20px;
+}
+
+.cta p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.cta a {
+    display: inline-block;
+    background-color: #10243b;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #0b1a2b;
+    color: white;
+    padding: 60px 7%;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+}
+
+footer h3 {
+    color: #d6b56c;
+    margin-bottom: 15px;
+}
+
+footer p,
+footer li {
+    color: #bfc5cc;
+    font-size: 14px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 8px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        min-height: 550px;
+        padding: 0 6%;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+.products-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+.product-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #17263a;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #d6b56c;
+    padding-bottom: 5px;
+    transition: 0.3s ease;
+}
+
+.product-link:hover {
+    color: #b18b3d;
+    letter-spacing: 1.5px;
+}
+.established {
+    color: #b18b3d;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+.customization {
+    padding: 100px 8%;
+    background: #17263a;
+    color: #ffffff;
+}
+
+.customization-content {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.customization .small-title {
+    color: #d6b56c;
+}
+
+.customization h2 {
+    color: #ffffff;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.customization-content > p:not(.small-title) {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    color: #d8d8d8;
+    line-height: 1.8;
+}
+
+.custom-options {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.custom-options > div {
+    padding: 28px 20px;
+    border: 1px solid rgba(214, 181, 108, 0.4);
+}
+
+.custom-options h3 {
+    color: #d6b56c;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.custom-options p {
+    color: #d8d8d8;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .custom-options {
+        grid-template-columns: 1fr;
+    }
+
+    .customization h2 {
+        font-size: 32px;
+    }
+}
+.product-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 25px;
+}
+.product-detail {
+    padding: 90px 8%;
+    background: #f1ede5;
+    text-align: center;
+}
+
+.product-detail-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.product-detail h2 {
+    font-size: 40px;
+    color: #17263a;
+    margin-bottom: 20px;
+}
+
+.product-detail-content > p:not(.small-title) {
+    color: #6d6d6d;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+.collection-section {
+    padding: 90px 8%;
+    background: #f8f5ef;
+}
+
+.collection-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.collection-heading .small-title {
+    color: #b18b3d;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.collection-heading h2 {
+    font-family: Georgia, serif;
+    color: #17263a;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.collection-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.collection-card {
+    background: #ffffff;
+    padding: 32px 28px;
+    border: 1px solid #e6dfd2;
+    min-height: 190px;
+    transition: 0.3s ease;
+}
+
+.collection-card:hover {
+    transform: translateY(-6px);
+    border-color: #d6b56c;
+    box-shadow: 0 15px 35px rgba(16, 36, 59, 0.10);
+}
+
+.collection-card h3 {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-weight: 500;
+    color: #17263a;
+    margin-bottom: 14px;
+}
+
+.collection-card p {
+    color: #6d6d6d;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.collection-card a {
+    color: #17263a;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #d6b56c;
+    padding-bottom: 5px;
+}
+
+.collection-card a:hover {
+    color: #b18b3d;
+}
+
+@media (max-width: 768px) {
+    .collection-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .collection-heading h2 {
+        font-size: 32px;
+    }
+}
+#bath-linen {
+    scroll-margin-top: 100px;
+}
+/* =========================================
+   EUREKA - ADDITIONAL FEATURES ONLY
+   Original design preserved
+========================================= */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Product images - keep original card design */
+.product-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 25px;
+}
+
+/* Guest amenities image */
+.product-card img.guest-image {
+    object-fit: contain;
+    background-color: #ffffff;
+    padding: 12px;
+}
+
+/* Product enquiry buttons */
+.product-detail .btn-primary {
+    display: inline-block;
+    background-color: #d6b56c;
+    color: #10243b;
+    padding: 13px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.product-detail .btn-primary:hover {
+    background-color: #10243b;
+    color: #ffffff;
+}
+
+/* Collection enquiry links */
+.collection-card a {
+    transition: all 0.3s ease;
+}
+
+.collection-card a:hover {
+    color: #b18b3d;
+    padding-left: 3px;
+}
+
+/* Product detail sections */
+.product-detail {
+    scroll-margin-top: 80px;
+}
+
+/* Better image loading / appearance */
+.product-card img {
+    object-position: center;
+}
+
+/* Footer links */
+footer a {
+    color: #bfc5cc;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+footer a:hover {
+    color: #d6b56c;
+}
+
+/* Instagram / Facebook links */
+footer .social-link {
+    color: #bfc5cc;
+}
+
+footer .social-link:hover {
+    color: #d6b56c;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .collection-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .custom-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        height: auto;
+        min-height: 75px;
+        padding: 18px 5%;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .logo span {
+        font-size: 9px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 560px;
+        padding: 60px 6%;
+        background-position: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-small {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+        line-height: 1.1;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 13px 22px;
+    }
+
+    /* Introduction */
+    .intro {
+        padding: 70px 7%;
+    }
+
+    .intro h2 {
+        font-size: 34px;
+    }
+
+    .intro p {
+        font-size: 15px;
+    }
+
+    /* Products */
+    .products {
+        padding: 70px 6%;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .product-card {
+        padding: 30px 25px;
+    }
+
+    .product-card img {
+        height: 210px;
+    }
+
+    /* Product details */
+    .product-detail {
+        padding: 70px 6%;
+    }
+
+    .product-detail h2 {
+        font-size: 34px;
+    }
+
+    /* Collections */
+    .collection-section {
+        padding: 65px 6%;
+    }
+
+    .collection-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .collection-card {
+        min-height: auto;
+        padding: 28px 24px;
+    }
+
+    /* Why Eureka */
+    .why {
+        padding: 70px 6%;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Customization */
+    .customization {
+        padding: 70px 6%;
+    }
+
+    .custom-options {
+        grid-template-columns: 1fr;
+    }
+
+    /* CTA */
+    .cta {
+        padding: 70px 7%;
+    }
+
+    .cta h2 {
+        font-size: 35px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 50px 6% 30px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        display: inline-block;
+        width: auto;
+    }
+
+    .intro h2,
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .product-detail h2 {
+        font-size: 30px;
+    }
+
+    .collection-heading h2 {
+        font-size: 30px;
+    }
+}
